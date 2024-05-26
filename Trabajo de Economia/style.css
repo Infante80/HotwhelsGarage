@@ -1,0 +1,228 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #aaeef7;
+}
+
+header {
+    background-color: #1b5a6f;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color:#166e88;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #ddeff0;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #052e3a;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+    filter: brightness(100%);
+}
+
+footer {
+    background-color: #1b5a6f;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.galeria-container {
+    position: relative;
+}
+
+.galeria {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria.active {
+    display: flex;
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navigation button {
+    background-color: #052e3a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navigation button:hover {
+    background-color: #178092;
+}
+.product-details {
+    max-width: 600px;
+    border-radius: 20PX;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#product-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#buy-button {
+    background-color: #2b17da;
+    border-radius: 15px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#buy-button:hover {
+    background-color: hwb(234 0% 73%);
+}
+.product-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 20px;
+}
+
+.btn {
+    background-color: #2b1cb6;
+    color: #fff;
+    border-radius: 12px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: hwb(234 0% 73%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hwb(234 0% 73%);
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.other-products-container {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.other-products {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.other-products.active {
+    display: flex;
+}
+
+.other-products img {
+    width: 200px;
+    height: 300px;
+    /* Tamaño de imagen ajustado */
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.other-products img:hover {
+    transform: scale(1.1);
+    filter: brightness(100%);
+}
+
+.other-products-section {
+    max-width: 800px;
+    margin: 40px auto 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    border-radius: 5px;
+}
